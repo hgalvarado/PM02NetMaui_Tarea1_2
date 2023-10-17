@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PM02NetMaui_Tarea1_2.Views.PageRegister"
+             Title="PageRegister">
+    <VerticalStackLayout>
+        <Image x:Name="foto" WidthRequest="100" HeightRequest="200" Source="https://play-lh.googleusercontent.com/_oM6TuM9FH111UzCaWWEhlRM1mtkMTJIkfaePEJH0boD8Pn9P1kyfVDjpUc-ljyJI_w"/>
+        <Entry Keyboard="Text" x:Name="txtName" Placeholder="Enter your names" VerticalOptions="Start"/>
+        <Entry Keyboard="Text" x:Name="txtLastName" Placeholder="Enter your last name" VerticalOptions="Start"/>
+        <DatePicker x:Name="dateBirth" Format="D"/>
+        <Entry Keyboard="Email" x:Name="txtEmail" Placeholder="Enter your email address" VerticalOptions="Start"/>
+
+        <Button x:Name="btnRegister" Text="Register" Clicked="btnRegister_Clicked"/>
+
+    </VerticalStackLayout>
+</ContentPage>
